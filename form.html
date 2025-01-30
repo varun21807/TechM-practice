@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Employee Registration</h1>
+    <fieldset>
+        <legend><b>Personal Information</b></legend>
+        <form action="">
+            <label for="f.name">First Name<span style="color: red;">*</span></label><br>
+            <input type="text" placeholder="Enter first name" name="f.name" pattern="[a-zA-Z]+" required><br>
+            <label for="l.name">Last Name<span style="color: red;">*</span></label><br>
+            <input type="text" placeholder="Enter last name" name="l.name" pattern="[a-zA-Z]+" required><br>
+            <label for="Email">Email<span style="color: red;">*</span></label><br>
+            <input type="email" name="Email" id="" placeholder="Enter email address" required><br>
+            <label for="" style="color: gray;">Example:johndeo@example.com</label><br>
+            <label for="ph.no">Phone Number <span style="color: red;">*</span></label><br>
+            <input type="tel" name="ph.no" id="" placeholder="Enter phone number" pattern="[6789]\d{9}" maxlength="10"
+                required><br>
+            <label for="gender">Gender<span style="color: red;">*</span></label><br>
+            <input type="radio" name="gender" id="" required>Male
+            <input type="radio" name="gender" id="">Female
+            <input type="radio" name="gender" id="">Others <br>
+            <label for="DOB">Date of Birth<span style="color: red;">*</span></label><br>
+            <input type="date" name="DOB" id="" required><br>
+            <label for="ms">Marital Status<span style="color: red;">*</span></label><br>
+            <input type="radio" name="ms" id="" required>Single
+            <input type="radio" name="ms" id="" required>Married <br>
+            <label for="sn">Spouse Name(If available)</label><br>
+            <input type="text" name="sn" id="" placeholder="Enter spouse name">
+
+    </fieldset>
+    <fieldset>
+        <legend><b>Employment Details</b></legend>
+            <label for="dpt">Department<span style="color: red;">*</span></label><br>
+            <select name="dpt" id="" required>
+                <option value="">Select Department</option>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                <option value="Finance manager">Finance Manager</option>
+            </select><br>
+            <label for="yoe">Years of Experience</label><br>
+            <input type="number" name="yoe" id="" placeholder="Enter experience in year" min="0"><br>
+            <label for="skils">Skills:</label><br>
+            <input type="checkbox" name="skills" id="">HTML
+            <input type="checkbox" name="skills" id="">CSS
+            <input type="checkbox" name="skills" id="">JavaScript
+            <input type="checkbox" name="skills" id="">SQL <br>
+            <label for="certi">Certifications</label><br>
+            <textarea style="resize: none;" name="certi" id="" placeholder="List your Certifications"></textarea><br>
+            <label for="pht">Profile Picture</label><br>
+            <input type="file" name="pht" id="" accept=".jpg, .png"><br>
+            <label for="" style="color: gray;">Allowed formate JPG,PNG</label>
+
+    </fieldset>
+    <fieldset>
+        <legend><b>Emergency Contact</b></legend>
+        <label for="c.name">Contact Name<span style="color: red;">*</span></label><br>
+        <input type="text" placeholder="Enter first name" name="f.name" pattern="[a-zA-Z]+" required><br>
+        <label for="c.ph">Contact Phone<span style="color: red;">*</span></label><br>
+        <input type="tel" name="ph.no" id="" placeholder="Enter phone number" pattern="[6789]\d{9}" maxlength="10"
+            required><br>
+        <label for="rel">Relationship<span style="color: red;">*</span></label><br>
+        <input type="text" name="rel" id="" placeholder="Enter Relationship (e.g., Parent, Spouse)" required>
+    </fieldset>
+    <fieldset>
+        <legend><b>Address Details</b></legend>
+        <label for="add">Address<span style="color: red;">*</span></label><br>
+        <textarea name="add" id="" placeholder="Enter your address"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend><b>Login Detials</b></legend>
+        <label for="u.name">Username<span style="color: red;">*</span></label><br>
+        <input type="text" placeholder="Choose a username" name="u.name" pattern="[a-zA-Z]+" required><br>
+        <label for="pass">Password<span style="color: red;">*</span></label><br>
+        <input type="password" name="pass" id="" placeholder="Enter Password"><br>
+        <label for="c.pass">Confirm Password<span style="color: red;">*</span></label><br>
+        <input type="password" name="c.pass" id="" placeholder="Re-enter password"><br>
+    </fieldset>
+    <input type="submit" name="" id="" value="Register">
+    <input type="reset" name="" id="" value="Clear Form">
+    </form>
+</body>
+
+</html>
